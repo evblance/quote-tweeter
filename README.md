@@ -1,1 +1,2 @@
-# quote-tweeter
+# Random Quote Machine
+A random quote tweeter...
