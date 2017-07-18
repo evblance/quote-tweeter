@@ -142,7 +142,7 @@ var quotes = [
     // retrieve the currently displayed quote
     var theQuote = $quote.text();
     // do not allow user to tweet before having generated a first quote
-    if ( theQuote == "CLICK THE BUTTON TO GENERATE A QUOTE" ) {
+    if ( theQuote == "HIT THE BUTTON TO GENERATE A QUOTE!" ) {
       window.alert("You might want to generate a quote first! :)");
       event.preventDefault();
       return;
