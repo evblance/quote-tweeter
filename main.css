@@ -1,85 +1,92 @@
 body {
-    
-    background-color: rgb(46, 28, 48);
-}
-
-h1 {
-    
-    color: rgb(244, 217, 247);
-    display: block;
-    text-align: center;
-    font-family: 'Lobster', sans-serif;
-    font-size: 3em;
-    margin-top: 2em;
-}
-
-#interaction {
-    
-    display: block;
-    text-align: center;
-}
-
-#quote-well {
-    
-    background-color: #6c6c6c;
-    color: white;
-    margin: auto;
-    width: 75%;
-    max-width: 768px;
-    min-height: 200px;
-    display: block;
-    margin-top: 40px;
-    margin-bottom: 25px;
-    border: #b5b5b5 5px dotted;
-    border-radius: 5px;
-    outline-color: blue;
-}
-
-.btn {
-    cursor: pointer;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.5em;
-    background-color: rgb(244, 217, 247);
-    color: rgb(46, 28, 48);
-    display: inline-block;
-    border: 2px dotted rgb(244, 217, 247);
-    align-self: center;
-    margin: 2px 5px 2px 5px;
-    padding: 5px 5px 5px 5px;
-    border-radius: 5px;
-    
-}
-
-.btn:hover {
-    color: #8b8b8b;
-    padding: 4px 4px 4px 4px;
-    border: 3px dotted rgba(46, 28, 48, 0.8);
-    transition: 333ms;
-}
-
-.btn a {
-  color: rgb(46, 28, 48);
-  text-decoration: none;
-}
-
-.btn a:hover {
-    color: #8b8b8b;
-    transition: 333ms;
-}
-
-.quote {
-    font-family: 'Libre Baskerville', cursive;
-    font-weight: 700;
-    font-size: 1.4em;
-    text-align: center;
-    margin: 50px 10px 10px 10px;
-    flex: both;
-    z-index: 1231233;
+  background: rgb(46, 28, 48);
+  box-sizing: border-box;
 }
 
 .author {
-    font-family: 'Josefin Sans', serif;
-    font-size: 1.1em;
-    text-align: right;
-    margin: 20px 20px 20px 20px;
+  align-self: flex-end;
+  font-family: 'Josefin Sans', serif;
+  font-size: 1.1rem;
+  margin: 0 20px 10px;
+  text-align: right;
+}
+
+.btn {
+  background: rgb(244, 217, 247);
+  box-shadow: 0 2px 8px 0 rgba(20,20,20,0.25);
+  border: 1px solid rgb(244, 217, 247);
+  color: rgb(46, 28, 48);
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  margin: 2px 5px;
+  padding: 5px;
+  transition: all 0.33s ease-out;
+}
+
+.btn:hover,
+.btn:hover .tweet-link {
+  background: rgb(46, 28, 48);
+  color: rgb(244, 217, 247);
+  transition: all 0.33s ease-out;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.heading {
+  color: rgb(244, 217, 247);
+  font-family: 'Lobster', sans-serif;
+  font-size: 3rem;
+  margin: 2rem auto 0;
+  text-align: center;
+  text-shadow: 1px 1px 6px rgba(20,20,20,0.25);
+}
+
+.tweet-link {
+  color: rgb(46, 28, 48);
+  text-decoration: none;
+  transition: all 0.33s ease-out;
+}
+
+.quote {
+  font-family: 'Libre Baskerville', cursive;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 20px 20px 5px;
+}
+
+.quote-container {
+  align-items: center;
+  background: rgb(121,85,124);
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 0 rgba(20,20,20,0.25);
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px auto 25px;
+  max-width: 768px;
+  min-height: 200px;
+  width: 75%;
+}
+
+
+@media screen and (max-width: 640px) {
+
+  .heading {
+    margin: 0 auto;
+  }
+
+  .quote {
+    margin: 5px;
+  }
+
+  .quote-container {
+    margin: 10px auto;
+    max-width: 100%;
+  }
+
 }
